@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/lol-logo.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League of Legends</title>
+</head>
+<body>
+    <div class="containerLogin">
+        <figure class="logo">
+            <img src="img/riot_logo.png" alt="riot logo">
+        </figure>
+        <form action="#">
+            <div>
+                <h2>Fazer login</h2>
+                <div class="inputContainer">
+                    <input type="text" class="user" placeholder="Nome de usuário">
+                    <input type="password" class="password" placeholder="Senha">
+                </div>
+                <div class="socialMedia">
+                    <button class="facebook">
+                        <img src="img/facebook.png" alt="facebook">
+                    </button>
+                    <button class="google">
+                        <img src="img/google.png" alt="google">
+                    </button>
+                    <button class="apple">
+                        <img src="img/apple.png" alt="apple">
+                    </button>
+                </div>
+            </div>
+            <div>
+                <div class="keepLogged">
+                    <input type="checkbox" name="check" id="check">
+                    <label for="check">Manter login</label>
+                </div>
+                <button class="signIn" disabled>
+                    <img src="img/seta.png" alt="seta">
+                </button>
+                <a href="#">Não consegue iniciar a sessão?</a>
+                <a href="#">Criar conta</a>
+            </div>
+        </form>
+    </div>
+    <div class="containerGame"></div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.logo{
+    width: 150px;
+    margin: 20px auto;
+}
+.logo img{
+    width: 150px;
+    filter: saturate(150%);
+}
+h2{
+    margin: 10px auto;
+    font-size: 20px;
+    text-align: center;
+}
+.containerLogin{
+    width: 25%;
+    height: 100%;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.user, .password{
+    width: 250px;
+    height: 40px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 15px;
+    background-color: #afafaf;
+    display: block;
+}
+.socialMedia{
+    width: 250px;
+    height: 25px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.socialMedia button{
+    width: 50px;
+    height: 25px;
+    border: none;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.socialMedia button img, .signIn img{
+    width: 20px;
+}
+.facebook{
+    background-color: #0000ff;
+}
+.google{
+    background-color: #ff0000;
+}
+.apple{
+    background-color: #000000;
+}
+.socialMedia button:hover{
+    background-color: #ff4f6f;
+}
+.keepLogged{
+    width: 250px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+.keepLogged input{
+    margin-right: 10px;
+}
+.signIn{
+    width: 50px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff002e;
+    opacity: .5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 70px auto 10px;
+}
+.newColor{
+    opacity: 1;
+}
+a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    text-decoration: underline;
+}
+/* =========================== */
+.containerGame{
+    width:75%;
+    height: 100%;
+    background-image: url(img/background_lol.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* =========================== */
+/* RESPONSIVO */
+@media (max-width:1100px) {
+    .user, .password, .socialMedia, .keepLogged{
+        width: 200px;
+    }
+    label, a{
+        font-size: 12px;
+    }
+    .signIn{
+        margin-top: 10px;
+    }
+}
+@media (max-width:880px) {
+    .containerLogin{
+        width: 35%;
+    }
+    .containerGame{
+        width: 65%;
+    }
+    .user, .password, .socialMedia, .keepLogged{
+        width: 170px;
+    }
+}
+@media (max-width:550px) {
+    body{
+        flex-direction: column-reverse;
+    }
+    .containerLogin{
+        width: 100%;
+        height: 50%;
+    }
+    .logo{
+        width: 100px;
+        margin: 0 auto;
+    }
+    .logo img{
+        width: 100px;
+    }
+    h2{
+        font-size: 15px;
+    }
+    .inputContainer{
+        display: flex;
+    }
+    .user, .password{
+        width: 140px;
+        height: 30px;
+        margin: 2px 5px 0;
+    }
+    .socialMedia{
+        width: 250px;
+        margin: 10px auto;
+    }
+    .keepLogged{
+        margin: 5px auto;
+        justify-content: center;
+    }
+    .signIn{
+        margin: 5px auto;
+    }
+    .links{
+        margin-bottom: 10px;
+    }
+    .containerGame{
+        width: 100%;
+        height: 50%;
+    }
+}
